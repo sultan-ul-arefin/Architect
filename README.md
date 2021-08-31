@@ -8,6 +8,7 @@ Task                            | Description
 --------------------------------|--------------------------------------------------------------------------------------
 Authencation                    | Authencation is successfully done in Frontend & Backend
 Role Based Access Control       | Role based access control in both Angular and Nodejs
+Bangla & English Translation    | Translation using [ngx-translate](https://github.com/ngx-translate/core)
 
 # Main tasks
 
@@ -91,22 +92,22 @@ Development, build and quality processes are based on [angular-cli](https://gith
 - [Lodash](https://lodash.com)
 - [Moment.js](https://momentjs.com)
 
-#### Coding guides
+#### Coding Practises
 
-- [Angular](docs/coding-guides/angular.md)
-- [TypeScript](docs/coding-guides/typescript.md)
-- [Sass](docs/coding-guides/sass.md)
-- [HTML](docs/coding-guides/html.md)
-- [Unit tests](docs/coding-guides/unit-tests.md)
-- [End-to-end tests](docs/coding-guides/e2e-tests.md)
+- Angular 
+- TypeScript 
+- Sass 
+- HTML 
+- Unit tests uides
+- End-to-end tests 
 
-#### Other documentation
+#### Other Practises
 
-- [I18n guide](docs/i18n.md)
-- [Working behind a corporate proxy](docs/corporate-proxy.md)
-- [Updating dependencies and tools](docs/updating.md)
-- [Using a backend proxy for development](docs/backend-proxy.md)
-- [Browser routing](docs/routing.md)
+- I18n guide 
+- Working behind a corporate proxy 
+- Updating dependencies and tools 
+- Using a backend proxy for development
+- Browser routing 
 
 ```
 Architect
