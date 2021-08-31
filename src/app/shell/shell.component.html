@@ -1,0 +1,48 @@
+<div fxFlex>
+  <mat-sidenav-container fxFill>
+    <mat-sidenav #sidenav [mode]="isMobile ? 'over' : 'side'" [opened]="!isMobile" [disableClose]="!isMobile"
+      ngClass.gt-sm="has-border">
+      <mat-toolbar>
+        <img class="logo" src="assets/img/logo.png" style="height: auto;" alt="Orchid Architect's logo" />
+        <div fxFlex></div>
+      </mat-toolbar>
+      <nav>
+        <!-- <mat-list *ngFor="let menu of menus">
+          <mat-divider></mat-divider>
+          <a mat-list-item [routerLink]="menu.routerLink" [routerLinkActive]="menu.active"
+            (click)="isMobile && sidenav.close()">
+            <span translate>{{menu.name}}</span>
+          </a>
+          <mat-divider></mat-divider>
+        </mat-list> -->
+        <app-side-menu></app-side-menu>
+      </nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar>
+        <button class="menu-button" mat-icon-button (click)="sidenav.toggle()" fxHide.gt-sm>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <div fxFlex></div>
+        <app-language-selector icon="true"></app-language-selector>
+        <div>
+          <button mat-icon-button [matMenuTriggerFor]="userMenu">
+            <mat-icon>person</mat-icon>
+          </button>
+          <mat-menu #userMenu="matMenu">
+            <mat-list>
+              <mat-list-item>
+                <span translate>Logged in as</span>&nbsp;<b>{{ username }}</b>
+              </mat-list-item>
+              <mat-divider></mat-divider>
+            </mat-list>
+            <button mat-menu-item (click)="logout()" translate>Logout</button>
+          </mat-menu>
+        </div>
+      </mat-toolbar>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

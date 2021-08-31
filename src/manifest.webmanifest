@@ -1,0 +1,23 @@
+{
+  "name": "Orchid Architect's",
+  "short_name": "Orchid",
+  "theme_color": "#488aff",
+  "background_color": "#488aff",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "assets/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}

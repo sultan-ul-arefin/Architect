@@ -1,0 +1,66 @@
+<div class="container">
+  <mat-card>
+    <h1>
+      <mat-card-title translate>Application Settings</mat-card-title>
+    </h1>
+    <mat-card-content>
+      <mat-vertical-stepper>
+        <mat-step>
+          <ng-template matStepLabel>Menu Accessability</ng-template>
+          <table class="table table-bordered table-hover" fixed-header>
+            <thead class="table-active">
+              <tr>
+                <th scope="row"><strong>No</strong></th>
+                <td><strong>Icon</strong></td>
+                <td colspan="2"><strong>Name</strong></td>
+                <td colspan="2"><strong>Role Access</strong></td>
+              </tr>
+            </thead>
+            <tbody *ngFor="let menu of menuItems; let i = index ">
+              <tr>
+                <th scope="row">{{i+1}}</th>
+                <td>
+                  <mat-icon mat-list-icon>{{menu.icon}}</mat-icon>
+                </td>
+                <td colspan="2">{{menu.label}}</td>
+                <td>
+                  <mat-checkbox [checked]="menu.Manager" (change)='update(menu.label,"Manager")'>
+                    Managers
+                  </mat-checkbox>
+                </td>
+                <td>
+                  <mat-checkbox [checked]="menu.Other" (change)='update(menu.label,"Other")'>
+                    Others
+                  </mat-checkbox>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button mat-raised-button (click)="saveData()">Save</button>
+          <button mat-raised-button matStepperNext>Next</button>
+        </mat-step>
+
+
+        <mat-step>
+          <ng-template matStepLabel>Category Creation</ng-template>
+
+
+          <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+          <button mat-raised-button color="primary" matStepperNext>Next</button>
+
+        </mat-step>
+
+
+        <!-- <mat-step>
+          <ng-template matStepLabel>Step No</ng-template>
+
+          <p>content</p>
+          <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+          <button mat-raised-button color="primary" matStepperNext>Next</button>
+
+        </mat-step> -->
+
+      </mat-vertical-stepper>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,16 @@
+{
+  "APP_NAME": "অর্কিড আর্কিটেক'স",
+  "About": "আমাদের সম্পর্কে",
+  "Hello world !": "হ্যালো ওর্য়াল্ড !",
+  "Home": "হোম",
+  "Logged in as": "লগইন করেছেন",
+  "Login": "লগইন",
+  "Logout": "লগআউট",
+  "Password": "পাসওয়ার্ড",
+  "Password is required": "পাসওয়ার্ড দিতেই হবে",
+  "Username": "ইউজার নেম",
+  "Username is required": "ইউজার নেম দিতেই হবে",
+  "Username or password incorrect.": "পাসওয়ার্ড ও ইউজার নেম ভুল করেছেন",
+  "Remember me": "মনে রাখুন",
+  "Version": "ভার্সন"
+}

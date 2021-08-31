@@ -1,0 +1,12 @@
+.container {
+  text-align: center;
+  @media screen and (max-width: 1024px) {
+    padding: 1em 1em 1em 1em;
+   }
+  padding: 1em 1em 1em 4em;
+}
+
+.logo {
+  width: 150px;
+  margin: 0 auto;
+}

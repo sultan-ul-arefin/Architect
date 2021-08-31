@@ -1,0 +1,17 @@
+<div class="container" fxLayout="column" fxLayoutAlign="space-evenly stretch">
+  <h1 mat-dialog-title class="title" translate>{{data.title}}</h1>
+  <div mat-dialog-content>
+    <img *ngIf="data.success==true" src="assets/img/gif/ok.gif" class="icon">
+    <img *ngIf="data.error==true" src="assets/img/gif/error.gif" class="icon">
+    <img *ngIf="data.confuse==true" src="assets/img/gif/confuse.gif" class="icon">
+    <div>
+      <p translate>{{data.body}}</p>
+    </div>
+
+  </div>
+  <div fxLayoutAlign="space-evenly stretch" mat-dialog-actions>
+    <button mat-button *ngIf="data.cancel==true" (click)="onNoClick()" translate>Cancel</button>
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial translate>OK</button>
+  </div>
+
+</div>
