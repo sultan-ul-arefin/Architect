@@ -2,12 +2,12 @@
 
 ![Architect Firm ERP Web Application](https://github.com/sultan-ul-arefin/Architect/blob/main/login.jpeg?raw=true)
 
-# Developed
+# Open Source Part
 
 Task                            | Description
 --------------------------------|--------------------------------------------------------------------------------------
-1. Authencation                 | Authencation is successfully done in Frontend & Backend
-2. Role Based Access Control    | Role based access control in both Angular and Nodejs
+Authencation                    | Authencation is successfully done in Frontend & Backend
+Role Based Access Control       | Role based access control in both Angular and Nodejs
 
 # Main tasks
 
