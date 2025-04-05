@@ -1,4 +1,4 @@
-# ArchitectFirm
+Designed and developed a full ERP solution for an architecture company using Angular, Node.js, and MongoDB. The system automates core business processes including project management, client handling, resource allocation, billing, and reporting—streamlining operations and enhancing productivity through a modern, scalable web application.
 
 ![Architect Firm ERP Web Application](https://github.com/sultan-ul-arefin/Architect/blob/main/login.jpeg?raw=true)
 
